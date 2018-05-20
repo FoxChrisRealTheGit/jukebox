@@ -24,7 +24,8 @@ export default class MP3Button extends React.Component {
 
     render() {
         return (
-            <button id={this.props.mp3} className={this.state.buttonClass}>
+            <button id={this.props.mp3} className={this.state.buttonClass}
+                onClick={()=>this.props.changeMP3(this.state.currentButtonId, this.props.genre, this.props.mp3, this.props.artist)}>
                 {this.state.buttonTitle}
             </button>
         )

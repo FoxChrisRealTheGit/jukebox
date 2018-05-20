@@ -5,7 +5,7 @@ export default class Marquee extends React.Component {
         return (
             <section className="music-marquee">
                 <div className="headings">
-                    {this.props.mp3artist} - {this.props.children} ({this.props.genre})
+                    {this.props.mp3artist} - {this.props.children} ({this.props.mp3genre})
                 </div>
             </section>
         )

@@ -22,11 +22,11 @@ body {
 
 @keyframes headingMarquee{
   0%{
-    transform: translateX(500%)
+    transform: translateX(300%)
   }
 
   100%{
-    transform: translateX(-500%)
+    transform: translateX(-300%)
   }
 }
 
@@ -83,4 +83,40 @@ body {
 
 .unclicked-mp3-button{
   background-color: #39F;
+}
+
+.soundwave, .soundwave-hidden{
+  width: 100%;
+  text-align: center;
+  visibility: visible;
+  background-image: url(http://www.djvale.info/images/Equaliser9.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 167%;
+  height: 200px;
+}
+
+.soundwave-hidden{
+  visibility: hidden;
+}
+
+.pause-button, .play-button, .mute-button{
+  width: 32px;
+  height: 32px;
+  margin: 5px;  
+  border-radius: 3px;
+  border: 1px solid #999;
+  color: #FFF; 
+   cursor: pointer;
+}
+
+.pause-button{
+  background-color: #FF0000;
+}
+
+.play-button{
+  background-color: #007700;
+}
+
+.mute-button{
+  background-color: gold;
 }
